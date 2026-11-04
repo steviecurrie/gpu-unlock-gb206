@@ -1,0 +1,41 @@
+# gpu_peek_gb206
+Linux rizla 6.12.113+deb13-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.12.113-1 (2026-10-15) x86_64 GNU/Linux
+# card: 08:00.0 VGA compatible controller [0300]: NVIDIA Corporation GB206 [GeForce RTX 5060 Ti] [10de:2d04] (rev a1)
+# driver: 615.71.10
+# mode: read
+[300161.540734] nvidia 0000:08:00.0: gpu_peek_gb206: driver=nvidia device=10de:2d04 BAR0=0xf8000000
+[300161.540745] nvidia 0000:08:00.0: gpu_peek_gb206: 0x00000000 PMC_BOOT_0 (chip id)             = 0x1b6000a1
+[300161.540753] nvidia 0000:08:00.0: gpu_peek_gb206: 0x00118128 GFW PLM                          = 0x00008b8f
+[300161.540760] nvidia 0000:08:00.0: gpu_peek_gb206: 0x00118234 GFW boot progress                = 0x00000000
+[300161.540767] nvidia 0000:08:00.0: gpu_peek_gb206: 0x00110100 GFW falcon CPUCTL                = 0xbadf5720
+[300161.540774] nvidia 0000:08:00.0: gpu_peek_gb206: 0x001fa7cc WPR_CFG PLM                      = 0x00008b8f
+[300161.540781] nvidia 0000:08:00.0: gpu_peek_gb206: 0x00820000 FUSECTRL                         = 0xe0440100
+[300161.540788] nvidia 0000:08:00.0: gpu_peek_gb206: 0x00820040 FUSE_EN_SW_OVERRIDE              = 0x00000000
+[300161.540795] nvidia 0000:08:00.0: gpu_peek_gb206: 0x008200fc FUSE_SS_PLM                      = 0xfffffbff
+[300161.540803] nvidia 0000:08:00.0: gpu_peek_gb206: 0x00820224 FUSE_SS_DP                       = 0x00000000
+[300161.540810] nvidia 0000:08:00.0: gpu_peek_gb206: 0x008203f0 FUSE_FEAT_OVR_DIS                = 0x00000000
+[300161.540817] nvidia 0000:08:00.0: gpu_peek_gb206: 0x0082038c SECURE_FEAT_OVR_QUADRO_WR_SEC    = 0x00000002
+[300161.540824] nvidia 0000:08:00.0: gpu_peek_gb206: 0x0082059c FUSE_SS_FFMA                     = 0x00000000
+[300161.540831] nvidia 0000:08:00.0: gpu_peek_gb206: 0x008207d4 FUSE_SS_FMLA16                   = 0x00000000
+[300161.540838] nvidia 0000:08:00.0: gpu_peek_gb206: 0x008207d8 FUSE_SS_FMLA32                   = 0x00000003
+[300161.540845] nvidia 0000:08:00.0: gpu_peek_gb206: 0x008207dc FUSE_SS_IMLA0                    = 0x00000000
+[300161.540853] nvidia 0000:08:00.0: gpu_peek_gb206: 0x008207e0 FUSE_SS_IMLA1                    = 0x00000003
+[300161.540859] nvidia 0000:08:00.0: gpu_peek_gb206: 0x008207e4 FUSE_SS_IMLA2                    = 0x00000003
+[300161.540866] nvidia 0000:08:00.0: gpu_peek_gb206: 0x008207e8 FUSE_SS_IMLA3                    = 0x00000000
+[300161.540873] nvidia 0000:08:00.0: gpu_peek_gb206: 0x008207ec FUSE_SS_IMLA4                    = 0x00000003
+[300161.540880] nvidia 0000:08:00.0: gpu_peek_gb206: 0x00823800 FEAT_OVR_ECC_PLM                 = 0xfffffb8f
+[300161.540887] nvidia 0000:08:00.0: gpu_peek_gb206: 0x00823804 FEAT_OVR_PLM                     = 0xfffffb8f
+[300161.540894] nvidia 0000:08:00.0: gpu_peek_gb206: 0x00823808 FEAT_OVR_QUADRO                  = 0x00100183
+[300161.540901] nvidia 0000:08:00.0: gpu_peek_gb206: 0x0082380c FEAT_OVR_ECC                     = 0x00888888
+[300161.540908] nvidia 0000:08:00.0: gpu_peek_gb206: 0x00823810 FEAT_OVR_ECC_1                   = 0xaa2a2aaa
+[300161.540915] nvidia 0000:08:00.0: gpu_peek_gb206: 0x00823814 FEAT_READOUT_0                   = 0x00000233
+[300161.540922] nvidia 0000:08:00.0: gpu_peek_gb206: 0x00823818 FEAT_READOUT_1                   = 0x00c36180
+[300161.540930] nvidia 0000:08:00.0: gpu_peek_gb206: 0x0082381c SS0 (FEAT_OVR_SM_SS0)            = 0x06277073
+[300161.540937] nvidia 0000:08:00.0: gpu_peek_gb206: 0x00823820 SS1 (FEAT_OVR_SM_SS1)            = 0x00025005
+[300161.540944] nvidia 0000:08:00.0: gpu_peek_gb206: 0x00823824 FEAT_OVR_ROW_REMAP               = 0x00000003
+[300161.540952] nvidia 0000:08:00.0: gpu_peek_gb206: 0x00823828 FEAT_READOUT_2                   = 0x00000001
+[300161.540959] nvidia 0000:08:00.0: gpu_peek_gb206: 0x0082382c FEAT_OVR_ECC_2                   = 0x022aaaaa
+[300161.541061] nvidia 0000:08:00.0: gpu_peek_gb206: 0x00504204 SM_ISSUE_RATE_MODIFIER           = 0x00000005
+[300161.541069] nvidia 0000:08:00.0: gpu_peek_gb206: FEAT_READOUT_1 fields (imla0 fmla16 fmla32 ffma imla1 imla2 imla3 imla4 DP) = 0 0 3 0 3 3 0 3 0
+[300161.541074] nvidia 0000:08:00.0: gpu_peek_gb206: SS0 nibbles (bit3=enable, bits2:0=selector) = 3 7 0 7 7 2 6 0
+[300161.541079] nvidia 0000:08:00.0: gpu_peek_gb206: FEAT_OVR_PLM read_mask=0xf write_mask=0x8 pl3_only=1
