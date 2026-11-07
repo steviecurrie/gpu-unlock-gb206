@@ -1,0 +1,20 @@
+# start 2026-11-06T18:08:27+00:00 mem_sleep=s2idle [deep]
+# rate before
+peak summary
+  fp16_acc_fp16       88.01 TFLOP/s   1.000 x fp16->fp16
+  fp16_acc_fp32       49.87 TFLOP/s   0.567 x fp16->fp16
+  bf16_acc_fp32       49.96 TFLOP/s   0.568 x fp16->fp16
+# bank before
+[  470.298810] nvidia 0000:08:00.0: gpu_peek_gb206: 0x0082381c SS0 (FEAT_OVR_SM_SS0)            = 0x06375053
+[  470.298814] nvidia 0000:08:00.0: gpu_peek_gb206: 0x00823820 SS1 (FEAT_OVR_SM_SS1)            = 0x00025005
+# suspending in 8s (deep). if it does not come back, power-button it.
+# resumed 2026-11-06T18:09:32+00:00 rc=0
+# bank after
+[  490.392386] nvidia 0000:08:00.0: gpu_peek_gb206: 0x0082381c SS0 (FEAT_OVR_SM_SS0)            = 0x06277053
+[  490.392391] nvidia 0000:08:00.0: gpu_peek_gb206: 0x00823820 SS1 (FEAT_OVR_SM_SS1)            = 0x00027005
+# rate after
+peak summary
+  fp16_acc_fp16       87.53 TFLOP/s   1.000 x fp16->fp16
+  fp16_acc_fp32       49.53 TFLOP/s   0.566 x fp16->fp16
+  bf16_acc_fp32       49.81 TFLOP/s   0.569 x fp16->fp16
+# done

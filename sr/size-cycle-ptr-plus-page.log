@@ -1,0 +1,9 @@
+# start 2026-11-04T17:12:43+00:00 field=ptr val=0xb0001000 mem_sleep=s2idle [deep]
+# rate before
+  fp16_acc_fp32       49.20 TFLOP/s   0.566 x fp16->fp16
+  bf16_acc_fp32       49.70 TFLOP/s   0.572 x fp16->fp16
+# bank before
+[  699.886291] nvidia 0000:08:00.0: gpu_peek_gb206: 0x0082381c SS0 (FEAT_OVR_SM_SS0)            = 0x06377073
+[  699.886295] nvidia 0000:08:00.0: gpu_peek_gb206: 0x00823820 SS1 (FEAT_OVR_SM_SS1)            = 0x00027005
+# arm sr_poke ptr=0xb0001000 at 0xffffffffc159103b
+# suspending in 8s (deep). if it does not come back, power-button it.

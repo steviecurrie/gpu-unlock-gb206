@@ -1,0 +1,6 @@
+# start 2026-11-04T16:28:55+00:00 field=flags val=2
+# probe 0xffffffffc13dd03b (sym ffffffffc13dced0)
+# armed. suspending in 8s. wake with the power button.
+# resumed 2026-11-04T16:29:12+00:00 rc=0
+[  278.386887] sr_poke: flags 0x0 -> 0x2
+# done

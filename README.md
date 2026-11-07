@@ -162,6 +162,37 @@ different probe, this 0.56. All three agree the cap is real; none of them is
 "the" ratio. Quote the absolute TFLOPS and the driver-reported fuse, not the
 ratio alone.
 
+## Cross-card comparison
+
+GB206 is measured in this repo. GB203M values are from ElXreno's public
+`gpu-unlock-ada` post (2026-10-25). The GB202 column was removed: its values
+had no traceable source. "varies" means the value changes across boots or
+suspends with no write from us (see the resume notes in the wiki).
+
+| Register | GB203M (5090 Laptop) | GB206 (5060 Ti) |
+|---|---|---|
+| `PMC_BOOT_0` | `0x1b3000a1` | `0x1b6000a1` |
+| `FEAT_OVR_PLM` | `0xfffffb8f` | `0xfffffb8f` |
+| `FUSE_SS_DP` | 0 | 0 |
+| `FUSE_SS_FFMA` | 0 | 0 |
+| `FUSE_SS_FMLA16` | 0 | 0 |
+| `FUSE_SS_FMLA32` | 3 | 3 |
+| `FUSE_SS_IMLA0` | 0 | 0 |
+| `FUSE_SS_IMLA1` | 3 | 3 |
+| `FUSE_SS_IMLA2` | 3 | 3 |
+| `FUSE_SS_IMLA3` | 0 | 0 |
+| `FUSE_SS_IMLA4` | 3 | 3 |
+| `FEAT_READOUT_1` | `0x00c36180` | `0x00c36180` |
+| `FEAT_OVR_ECC` | not reported | `0x00888888` |
+| `FEAT_OVR_ECC_1` | not reported | `0xaa2a2aaa` |
+| `FEAT_OVR_SM_SS0` | `0x02000000` / `0x12000000` | varies (`0x06275053` to `0x07377053`) |
+| `FEAT_OVR_SM_SS1` | `0x00002004` | varies (`0x00025005` to `0x00065005`) |
+| `SM_ISSUE_RATE_MODIFIER` | 5 | 5 |
+| Measured FP32-acc / FP16-acc | not measured | 0.56x to 0.57x |
+
+The FUSE and PLM words match on both dies. A GB202 comparison needs a GB202
+card and a fresh read.
+
 ## Related work
 
 - `JustAResearcher/gpu-unlock-ada` issue #12 — the GB202/GB203M reconnaissance

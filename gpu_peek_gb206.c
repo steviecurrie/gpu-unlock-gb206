@@ -98,7 +98,7 @@ static void dump_decodes(struct pci_dev *pdev, void __iomem *bar)
 	for (i = 0; i < GPU_PEEK_READOUT_UNITS; i++)
 		n += scnprintf(buf + n, sizeof(buf) - n, " %u", readout[i]);
 	dev_info(&pdev->dev,
-		 "gpu_peek_gb206: FEAT_READOUT_1 fields (imla0 fmla16 fmla32 ffma imla1 imla2 imla3 imla4 DP) =%s\n",
+		 "gpu_peek_gb206: FEAT_READOUT_1 fields (imla0 fmla16 fmla32 ffma imla1 imla2 imla3 imla4 DP; field values, not rates) =%s\n",
 		 buf);
 
 	value = ioread32(bar + SS0_OFFSET);

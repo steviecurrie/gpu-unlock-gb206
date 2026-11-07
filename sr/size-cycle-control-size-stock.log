@@ -1,0 +1,18 @@
+# start 2026-11-04T17:09:25+00:00 field=size val=0xa520000 mem_sleep=s2idle [deep]
+# rate before
+  fp16_acc_fp32       49.65 TFLOP/s   0.566 x fp16->fp16
+  bf16_acc_fp32       49.86 TFLOP/s   0.568 x fp16->fp16
+# bank before
+[  533.256814] nvidia 0000:08:00.0: gpu_peek_gb206: 0x0082381c SS0 (FEAT_OVR_SM_SS0)            = 0x06377073
+[  533.256818] nvidia 0000:08:00.0: gpu_peek_gb206: 0x00823820 SS1 (FEAT_OVR_SM_SS1)            = 0x00025005
+# arm sr_poke size=0xa520000 at 0xffffffffc159103b
+# suspending in 8s (deep). if it does not come back, power-button it.
+# resumed 2026-11-04T17:10:28+00:00 rc=0
+[  542.995210] sr_poke: size 0xa520000 -> 0xa520000
+# bank after
+[  551.189342] nvidia 0000:08:00.0: gpu_peek_gb206: 0x0082381c SS0 (FEAT_OVR_SM_SS0)            = 0x07377053
+[  551.189345] nvidia 0000:08:00.0: gpu_peek_gb206: 0x00823820 SS1 (FEAT_OVR_SM_SS1)            = 0x00027005
+# rate after
+  fp16_acc_fp32       49.55 TFLOP/s   0.564 x fp16->fp16
+  bf16_acc_fp32       49.82 TFLOP/s   0.567 x fp16->fp16
+# done

@@ -1,0 +1,128 @@
+{
+  "device": {
+    "gpu": "NVIDIA GeForce RTX 5060 Ti",
+    "sm_count": 36,
+    "compute_capability": "12.0",
+    "torch": "2.15.0+cu132",
+    "cuda": "13.2",
+    "platform": "Linux-6.12.113+deb13-amd64-x86_64-with-glibc2.41"
+  },
+  "peaks_tflops": {
+    "fp16_acc_fp16": 90.08,
+    "fp16_acc_fp32": 49.883,
+    "bf16_acc_fp32": 50.428
+  },
+  "ratio_vs_fp16_acc_fp16": {
+    "fp16_acc_fp16": 1.0,
+    "fp16_acc_fp32": 0.5538,
+    "bf16_acc_fp32": 0.5598
+  },
+  "grid": [
+    {
+      "mode": "fp16_acc_fp16",
+      "m": 4096,
+      "n": 4096,
+      "k": 4096,
+      "tflops": 78.77
+    },
+    {
+      "mode": "fp16_acc_fp16",
+      "m": 8192,
+      "n": 8192,
+      "k": 4096,
+      "tflops": 80.15
+    },
+    {
+      "mode": "fp16_acc_fp16",
+      "m": 8192,
+      "n": 4096,
+      "k": 8192,
+      "tflops": 90.08
+    },
+    {
+      "mode": "fp16_acc_fp16",
+      "m": 16384,
+      "n": 8192,
+      "k": 4096,
+      "tflops": 79.81
+    },
+    {
+      "mode": "fp16_acc_fp16",
+      "m": 16384,
+      "n": 16384,
+      "k": 2048,
+      "tflops": 77.43
+    },
+    {
+      "mode": "fp16_acc_fp32",
+      "m": 4096,
+      "n": 4096,
+      "k": 4096,
+      "tflops": 49.88
+    },
+    {
+      "mode": "fp16_acc_fp32",
+      "m": 8192,
+      "n": 8192,
+      "k": 4096,
+      "tflops": 48.96
+    },
+    {
+      "mode": "fp16_acc_fp32",
+      "m": 8192,
+      "n": 4096,
+      "k": 8192,
+      "tflops": 49.14
+    },
+    {
+      "mode": "fp16_acc_fp32",
+      "m": 16384,
+      "n": 8192,
+      "k": 4096,
+      "tflops": 48.89
+    },
+    {
+      "mode": "fp16_acc_fp32",
+      "m": 16384,
+      "n": 16384,
+      "k": 2048,
+      "tflops": 48.28
+    },
+    {
+      "mode": "bf16_acc_fp32",
+      "m": 4096,
+      "n": 4096,
+      "k": 4096,
+      "tflops": 49.73
+    },
+    {
+      "mode": "bf16_acc_fp32",
+      "m": 8192,
+      "n": 8192,
+      "k": 4096,
+      "tflops": 49.89
+    },
+    {
+      "mode": "bf16_acc_fp32",
+      "m": 8192,
+      "n": 4096,
+      "k": 8192,
+      "tflops": 50.43
+    },
+    {
+      "mode": "bf16_acc_fp32",
+      "m": 16384,
+      "n": 8192,
+      "k": 4096,
+      "tflops": 50.06
+    },
+    {
+      "mode": "bf16_acc_fp32",
+      "m": 16384,
+      "n": 16384,
+      "k": 2048,
+      "tflops": 49.4
+    }
+  ],
+  "note": "Issue-rate measurement. Large-K GEMM keeps store traffic small; best-of-3 of the swept shapes. Not an application speedup."
+}

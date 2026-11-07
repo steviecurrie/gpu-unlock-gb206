@@ -1,0 +1,14 @@
+# start 2026-11-04T16:30:56+00:00 mem_sleep=[s2idle] deep
+# before
+[  318.068586] nvidia 0000:08:00.0: gpu_peek_gb206: SS0 nibbles (bit3=enable, bits2:0=selector) = 3 7 0 7 7 3 6 0
+[  390.645728] nvidia 0000:08:00.0: gpu_peek_gb206: 0x0082381c SS0 (FEAT_OVR_SM_SS0)            = 0x06377073
+[  390.645735] nvidia 0000:08:00.0: gpu_peek_gb206: 0x00823820 SS1 (FEAT_OVR_SM_SS1)            = 0x00025005
+[  390.645864] nvidia 0000:08:00.0: gpu_peek_gb206: SS0 nibbles (bit3=enable, bits2:0=selector) = 3 7 0 7 7 3 6 0
+# suspending in 8s, wake with a key
+# resumed 2026-11-04T16:31:17+00:00 rc=0
+# after
+[  390.645864] nvidia 0000:08:00.0: gpu_peek_gb206: SS0 nibbles (bit3=enable, bits2:0=selector) = 3 7 0 7 7 3 6 0
+[  414.247628] nvidia 0000:08:00.0: gpu_peek_gb206: 0x0082381c SS0 (FEAT_OVR_SM_SS0)            = 0x06377073
+[  414.247633] nvidia 0000:08:00.0: gpu_peek_gb206: 0x00823820 SS1 (FEAT_OVR_SM_SS1)            = 0x00025005
+[  414.247657] nvidia 0000:08:00.0: gpu_peek_gb206: SS0 nibbles (bit3=enable, bits2:0=selector) = 3 7 0 7 7 3 6 0
+# done
